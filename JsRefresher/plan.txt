@@ -1,4 +1,4 @@
-[-] Let vs Const
-[-] Destructuring
-[-] RestVsSpread
+[+] Let vs Const
+[+] Destructuring
+[+] RestVsSpread
 [-] Modules
