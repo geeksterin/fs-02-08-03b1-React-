@@ -28,13 +28,13 @@ function myMap(cb) {
   return newnums;
 }
 console.log(nums);
-function cb(num) {
+function callback(num) {
   if (num % 2 == 0) return num * 5;
   else return num * 4;
 }
-const updated1 = myMap(cb);
+const updated1 = myMap(callback);
 console.log(updated1);
-const updated2 = nums.map(cb);
+const updated2 = nums.map(callback);
 console.log(updated2);
 
 const users = [
