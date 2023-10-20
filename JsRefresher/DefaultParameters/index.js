@@ -11,3 +11,9 @@
 // div(10, 10);
 // div(20, 0);
 // div(30);
+
+function sayHi(name) {
+  console.log(name);
+}
+
+sayHi("samiul");

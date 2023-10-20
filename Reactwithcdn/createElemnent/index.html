@@ -27,23 +27,40 @@
         //  const Comp = React.createElement("div", { id: "main_div" }, topChild, bottomChild);
 
 
-        function Comp1() {
+        function Comp1({ dts: { name }, age }) {
+            const users = [{
+                fname: "samiul",
+                lname: "khan"
+            }, {
+                fname: "piyush",
+                lname: "yadav"
+            }, {
+                fname: "Udit",
+                lname: "Singh"
+            }]
             return (
                 <div id="sec_div">
                     <div id="top">
-                        <h1>Intro</h1>
+                        <h1>Intro {age} {name}</h1>
                     </div>
                     <div id="bottom">
                         <p>Desc</p>
+                        {users.map(user => {
+                            return <p>{`${user.fname} ${user.lname}`}</p>
+                        })}
+
                     </div>
                 </div>
             )
         }
-
         function Main() {
+            const obj = {
+                name: "samiul",
+                age: 21
+            };
             return (
                 <div>
-                    <Comp1 />
+                    <Comp1 dts={obj} age="21" />
                     <div id="main_div">
                         <div id="top">
                             <h1>Intro</h1>
@@ -56,8 +73,8 @@
                 </div>
             )
         }
-
         root.render(<Main />);
+
 
 
 
