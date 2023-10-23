@@ -27,7 +27,25 @@
         //  const Comp = React.createElement("div", { id: "main_div" }, topChild, bottomChild);
 
 
-        function Comp1({ dts: { name }, age }) {
+   /*
+   const props = {
+    dts:value,
+    name:value,
+    age:value;
+   }
+   
+   */
+
+        function Comp1({dts,name,age}) {
+            /*
+            props.dts
+            props.name
+            props.age
+
+            dts.name
+            dts.age
+            
+            */
             const users = [{
                 fname: "samiul",
                 lname: "khan"
@@ -60,7 +78,7 @@
             };
             return (
                 <div>
-                    <Comp1 dts={obj} age="21" />
+                    <Comp1 dts={obj} age="21"  name="samiul" />
                     <div id="main_div">
                         <div id="top">
                             <h1>Intro</h1>
