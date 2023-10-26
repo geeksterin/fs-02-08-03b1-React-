@@ -32,7 +32,7 @@ function Footer() {
       </div>
 
       <div>
-        <p>Para1</p>
+        <p>Hello</p>
         <p>Para2</p>
         <p>para3</p>
       </div>

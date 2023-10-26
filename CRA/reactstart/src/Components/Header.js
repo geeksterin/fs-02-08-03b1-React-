@@ -8,6 +8,7 @@ function Header() {
   return (
     <div>
       <h1>Header</h1>
+
       <Navbar navitem1="about" navitem2="contact" cb={cb} />
     </div>
   );

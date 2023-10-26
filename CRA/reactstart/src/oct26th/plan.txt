@@ -1,0 +1,7 @@
+[ + ] external css(show them how to add and the css conflicts)
+    [ + ] Create a nested component and show them the problem
+[ + ] module css
+[ + ] React Fragments
+[ + ] how to add images
+[ - ] event listeners(calling functions on an event)
+[ - ] props driling 

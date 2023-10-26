@@ -1,4 +1,5 @@
 [+] Let vs Const
 [+] Destructuring
 [+] RestVsSpread
-[-] Modules
+[+] Modules
+[+] HOF
