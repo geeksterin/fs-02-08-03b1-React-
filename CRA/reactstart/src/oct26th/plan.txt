@@ -3,5 +3,10 @@
 [ + ] module css
 [ + ] React Fragments
 [ + ] how to add images
-[ - ] event listeners(calling functions on an event)
-[ - ] props driling 
+[ + ] event listeners(calling functions on an event)
+    [ + ] show them example with onClick and onChange event listeners.
+[ + ] props 
+[ + ] Type of props(show them the children props)
+[ + ] props driling (solution in context api class)
+[ - ] conditional Rendering(Wait for state)
+[ - ] short circuit(Wait for state)

@@ -1,16 +1,27 @@
 import React from "react";
 
 function Event() {
-  function handleClick(e) {
-    console.log(`Hello World ${e}`);
+  function handleClick(args) {
+    console.log(`Hello World `);
+  }
+
+  function handleInputChange(e) {
+    console.log(e.target.value);
   }
 
   return (
     <div>
       <h1>Hello World</h1>
-      <button onClick={() => handleClick(12)}>Click</button>
+      <button onClick={handleClick}>Click</button>
+      <input type="text" onChange={(e) => handleInputChange(e)} />
     </div>
   );
 }
 
 export default Event;
+
+// function func(a) {}
+
+// func(12);
+
+

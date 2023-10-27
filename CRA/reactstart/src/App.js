@@ -6,6 +6,7 @@ import A from "./oct26th/NestedComponents/A";
 import Frag from "./oct26th/Frag";
 import Imgcomp from "./oct26th/Imgcomp";
 import Event from "./oct26th/Event";
+import Parent from "./oct26th/Props/Parent";
 
 function App() {
   const inlineStyle = {
@@ -17,7 +18,7 @@ function App() {
   };
   return (
     <div style={inlineStyle}>
-      <Event />
+      <Parent />
     </div>
   );
 }

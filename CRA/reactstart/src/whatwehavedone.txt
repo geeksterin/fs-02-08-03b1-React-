@@ -1,0 +1,28 @@
+[+] What is React
+[+] Features Of React(Reusibility, SPA, Mutation Control)
+[+] React Using CDN
+[+] React.createElement()
+[+] Creating components using the React.createElement()
+[+] Babel(jsx compiler,cdn)
+[+] Jsx(Limitations around Loops)
+[+] Functional Components
+[+] Rendering array using map function
+[+] Props in cdn component
+[+] How to pass props
+[+] Props object
+[+] Destructring of props
+[+] Nesting of components
+[+] Npm vs Npx
+[+] Create-react-app
+[+] Folder structure
+[+] How to create components?(Again)
+[+] How to nest components?(multilevel nesting of components)
+[+] Inline css
+[+] External css and its problems(important)
+[+] Module css
+[+] React Fragments
+[+] How to add images to your project
+[+] Event Listeners
+[+] Props(Again)
+[+] Props Driling
+[+] Types Of Props
