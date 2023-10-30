@@ -7,6 +7,7 @@ import Frag from "./oct26th/Frag";
 import Imgcomp from "./oct26th/Imgcomp";
 import Event from "./oct26th/Event";
 import Parent from "./oct26th/Props/Parent";
+import Incr from "./State/Incr";
 
 function App() {
   const inlineStyle = {
@@ -18,7 +19,7 @@ function App() {
   };
   return (
     <div style={inlineStyle}>
-      <Parent />
+      <Incr />
     </div>
   );
 }
