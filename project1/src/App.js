@@ -28,6 +28,10 @@ function App() {
     setLength(event.target.value);
   }
 
+  function copypassword() {
+    navigator.clipboard.writeText(password);
+  }
+
   function generatePassword() {
     const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
@@ -117,10 +121,17 @@ function App() {
 
       <h1>{password}</h1>
       <button
-        className="border-1 border-slate-50 bg-slate-300"
+        className="border-1 border-slate-50 bg-slate-300 m-5"
         onClick={generatePassword}
       >
         Click to generate the password
+      </button>
+
+      <button
+        className="border-1 border-slate-50 bg-slate-300"
+        onClick={copypassword}
+      >
+        Copy password
       </button>
     </div>
   );
