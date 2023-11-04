@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
+import Checkbox from "./Components/Checkbox";
+import Number from "./Components/Number";
 
 function App() {
   console.log("i am rendering");
@@ -55,44 +57,62 @@ function App() {
       {/**
        * Length
        */}
-      <label htmlFor="length">What Should be the password length?</label>
+      {/* <label htmlFor="length">What Should be the password length?</label>
       <input
         type="number"
         id="length"
         value={length}
         onChange={(e) => handleLength(e)}
-      />
+      /> */}
+      <Number lengthKey={length} handleLengthKey={handleLength} />
       {/**
        * Number
        */}
-      <label htmlFor="number">Should the password contain Numbers</label>
+      {/* <label htmlFor="number">Should the password contain Numbers</label>
       <input
         type="checkbox"
         id="number"
         checked={containDigit}
         onChange={handleDigit}
+      /> */}
+      <Checkbox
+        containDigitKey={containDigit}
+        handleDigitKey={handleDigit}
+        strKey={"Should the password contain Numbers"}
       />
 
       {/**
        * Uppercase
        */}
-      <label htmlFor="uppercase">Should the password contain Uppercase</label>
+      {/* <label htmlFor="uppercase">Should the password contain Uppercase</label>
       <input
         type="checkbox"
         id="uppercase"
         checked={containUppercase}
         onChange={handleUppercase}
+      /> */}
+
+      <Checkbox
+        containDigitKey={containUppercase}
+        handleDigitKey={handleUppercase}
+        strKey={"Should the password contain Uppercase"}
       />
 
       {/**
        * Symbols
        */}
-      <label htmlFor="symbol">Should the password contain Symbols</label>
+      {/* <label htmlFor="symbol">Should the password contain Symbols</label>
       <input
         type="checkbox"
         id="symbol"
         checked={containSymbol}
         onChange={handleSymbol}
+      /> */}
+
+      <Checkbox
+        containDigitKey={containSymbol}
+        handleDigitKey={handleSymbol}
+        strKey={"Should the password contain Symbols"}
       />
 
       <h1>{password}</h1>
