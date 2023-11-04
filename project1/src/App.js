@@ -12,6 +12,15 @@ function App() {
   const [containSymbol, setContainSymbol] = useState(false);
   const [length, setLength] = useState(8);
 
+  // const [users, setUsers] = useState(() => {
+  //   const num = 10;
+  //   return num;
+  // });
+
+  // setContainSymbol((prevSymbolValue) => {
+  //   return !prevSymbolValue;
+  // })
+
   function handleDigit() {
     setContainDigit(!containDigit);
   }
@@ -21,11 +30,15 @@ function App() {
   }
 
   function handleSymbol() {
-    setContainSymbol(!containSymbol);
+    setContainSymbol((prev) => {
+      return !prev;
+    });
   }
 
   function handleLength(event) {
-    setLength(event.target.value);
+    setLength((prev) => {
+      return event.target.value;
+    });
   }
 
   function copypassword() {
