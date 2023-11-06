@@ -14,7 +14,7 @@ function Effect() {
 
   //   useEffect(() => {
   //     console.log("i am rednering");
-  //   }, [count1]);
+  //   }, [count1,asmany states as you wants]);
 
   //   useEffect(() => {
   //     console.log("updation due to count1 state");

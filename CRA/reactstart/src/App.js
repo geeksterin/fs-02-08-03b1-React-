@@ -9,6 +9,7 @@ import Event from "./oct26th/Event";
 import Parent from "./oct26th/Props/Parent";
 import Incr from "./State/Incr";
 import Effect from "./Sideeffects/Effect";
+import Apicall from "./Sideeffects/Apicall";
 
 function App() {
   // const inlineStyle = {
@@ -18,7 +19,7 @@ function App() {
   //   alignItems: "center",
   //   justifyContent: "center",
   // };
-  return <Effect />;
+  return <Apicall />;
 }
 
 export default App;
