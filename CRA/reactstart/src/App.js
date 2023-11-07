@@ -9,6 +9,7 @@ import Event from "./oct26th/Event";
 import Parent from "./oct26th/Props/Parent";
 import Incr from "./State/Incr";
 import Effect from "./Sideeffects/Effect";
+import { useState } from "react";
 import Apicall from "./Sideeffects/Apicall";
 
 function App() {
@@ -19,7 +20,11 @@ function App() {
   //   alignItems: "center",
   //   justifyContent: "center",
   // };
-  return <Apicall />;
+  return (
+    <>
+      <Apicall />
+    </>
+  );
 }
 
 export default App;

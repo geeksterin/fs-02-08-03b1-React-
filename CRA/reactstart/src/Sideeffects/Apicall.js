@@ -1,22 +1,45 @@
 import React, { useEffect, useState } from "react";
+import Card from "./Card";
 
 function Apicall() {
-  //https://api.github.com/users
   const [users, setUsers] = useState([]);
-
+  const [filteredUsers, setFilteredUsers] = useState([]);
+  const [filterValue, setFilterValue] = useState("");
   useEffect(() => {
-    async function callApi() {
+    async function fetchData() {
       const res = await fetch("https://api.github.com/users");
       const data = await res.json();
       console.log(data);
       setUsers(data);
+      setFilteredUsers(data);
     }
-    callApi();
+    fetchData();
   }, []);
+  useEffect(() => {
+    if (filterValue) {
+      const newUsers = users.filter((user) => {
+        return user.login.includes(filterValue);
+      });
+      setFilteredUsers(newUsers);
+    } else {
+      setFilteredUsers(users);
+    }
+  }, [filterValue]);
+
+  function handleChange(event) {
+    setFilterValue(event.target.value);
+  }
+
   return (
     <div>
-      {users.map((user) => {
-        return <p>{user.login}</p>;
+      <h1>users</h1>
+      <input
+        type="text"
+        value={filterValue}
+        onChange={(e) => handleChange(e)}
+      />
+      {filteredUsers.map((user) => {
+        return <Card login={user.login} imgSrc={user.avatar_url} />;
       })}
     </div>
   );
