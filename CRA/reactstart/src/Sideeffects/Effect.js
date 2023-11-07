@@ -12,9 +12,9 @@ function Effect() {
   // once, only after the mounting phase ends
   //   }, []);
 
-    // useEffect(() => {
-    //   console.log("i am rednering");
-    // }, [count1,asmany states as you wants]);
+  // useEffect(() => {
+  //   console.log("i am rednering");
+  // }, [count1,asmany states as you wants]);
 
   //   useEffect(() => {
   //     console.log("updation due to count1 state");
@@ -23,6 +23,28 @@ function Effect() {
   //     console.log("updation due to count2 state");
   //   }, [count2]);
 
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     console.log("I am an interval");
+  //   }, 1000);
+
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
+
+  function mouseMove() {
+    console.log("mouseInsdie");
+  }
+
+  useEffect(() => {
+    window.addEventListener("mousemove", mouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    };
+  }, []);
+
   function handleClick1() {
     setCount1(count1 + 1);
   }
@@ -30,7 +52,7 @@ function Effect() {
     setCount2(count2 + 1);
   }
   return (
-    <div>
+    <div style={{ border: "1px solid red" }}>
       <h1>Effect</h1>
       <h1>{count1}</h1>
       <h1>{count2}</h1>

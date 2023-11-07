@@ -20,9 +20,14 @@ function App() {
   //   alignItems: "center",
   //   justifyContent: "center",
   // };
+  const [flag, setFlag] = useState(true);
+  function handleClick() {
+    setFlag(!flag);
+  }
   return (
     <>
-      <Apicall />
+      {flag && <Effect />}
+      <button onClick={handleClick}>Remove</button>
     </>
   );
 }
