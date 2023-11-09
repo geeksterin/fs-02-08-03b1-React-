@@ -11,6 +11,7 @@ import Incr from "./State/Incr";
 import Effect from "./Sideeffects/Effect";
 import { useState } from "react";
 import Apicall from "./Sideeffects/Apicall";
+import Comp from "./axios/Comp";
 
 function App() {
   // const inlineStyle = {
@@ -26,8 +27,7 @@ function App() {
   }
   return (
     <>
-      {flag && <Effect />}
-      <button onClick={handleClick}>Remove</button>
+      <Comp />
     </>
   );
 }
