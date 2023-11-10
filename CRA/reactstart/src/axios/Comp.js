@@ -4,6 +4,26 @@ import { getAllUsers, getUser, postUsers } from "../http/http.service";
 function Comp() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
+    // getAllUsers()
+    //   .then((res) => {
+    //     console.log(res.data);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+
+    // async function func() {
+    //   const { data } = await getAllUsers();
+    //   console.log(data);
+    // }
+
+    // func();
+
+    // (async function () {
+    //   const { data } = await getAllUsers();
+    //   console.log(data);
+    // })();
+
     async function getData() {
       const { data } = await getAllUsers();
       //   console.log(data);
