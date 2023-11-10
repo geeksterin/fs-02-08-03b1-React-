@@ -44,6 +44,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
+      <h1>I am below BrowserRoyter</h1>
     </>
   );
 }
