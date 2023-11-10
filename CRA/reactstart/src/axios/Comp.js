@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { getAllUsers, getUser } from "../http/http.service";
+import { getAllUsers, getUser, postUsers } from "../http/http.service";
 
 function Comp() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
     async function getData() {
       const { data } = await getAllUsers();
-      console.log(data);
+      //   console.log(data);
+      //   data = data.filter((user) => {
+      //     return user.login.includes("ab");
+      //   });
 
       /*
         const { data } = await axios.get("https://api.github.com/users", {
@@ -31,11 +34,10 @@ function Comp() {
         }
         })
         
-        
-        */
-
-      //   console.log(data);
-      //   setUsers(data);
+    
+      console.log(data);
+       setUsers(data);
+              */
     }
 
     async function getOneUser(userId) {
@@ -44,6 +46,15 @@ function Comp() {
     }
     getData();
     getOneUser(1000);
+
+    async function postNewUsers(userData) {
+      const { data } = await postUsers(userData);
+      console.log(data);
+    }
+    postNewUsers({
+      fname: "samiul",
+      lname: "khan",
+    });
   }, []);
   return <div>Comp</div>;
 }

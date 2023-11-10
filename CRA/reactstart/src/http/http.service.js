@@ -21,6 +21,12 @@ export async function getUser(userId) {
   return await api.get(`/users/${userId}`);
 }
 
+export async function postUsers(userData) {
+  return await api.post("/users/create", userData);
+}
+
+
+
 // export async function postUser(data)
 // {
 //     return await api.post("/users",data)
