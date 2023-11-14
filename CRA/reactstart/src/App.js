@@ -19,6 +19,8 @@ import About from "./Pages/About";
 import Career from "./Pages/Career";
 import Contact from "./Pages/Contact";
 import Nav from "./Components/Nav";
+import Users from "./Pages/Users";
+import User from "./Pages/User";
 
 function App() {
   // const inlineStyle = {
@@ -42,6 +44,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/users">
+            <Route path="/users/all" element={<Users />} />
+            <Route path="/users/:userId" element={<User />} />
+          </Route>
         </Routes>
       </BrowserRouter>
       <Footer />
@@ -50,13 +56,16 @@ function App() {
   );
 }
 /**
- *
+ *http://localhost:3000/users/ ->All users
+ * http://localhost:3000/users/ -> Particuler user
  * http://localhost:3000/ Home
  * http://localhost:3000/project Project
  * http://localhost:3000/about   About
  * http://localhost:3000/career  Career
  * http://localhost:3000/contact  Contact
  *
+ *
+ * http://localhost:3000/users/{userId}
  */
 
 export default App;
