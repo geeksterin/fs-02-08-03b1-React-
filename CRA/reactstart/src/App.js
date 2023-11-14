@@ -21,6 +21,7 @@ import Contact from "./Pages/Contact";
 import Nav from "./Components/Nav";
 import Users from "./Pages/Users";
 import User from "./Pages/User";
+import UseReducercomp from "./UseReducer/UseReducercomp";
 
 function App() {
   // const inlineStyle = {
@@ -36,7 +37,7 @@ function App() {
   // }
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -51,7 +52,8 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
-      <h1>I am below BrowserRoyter</h1>
+      <h1>I am below BrowserRoyter</h1> */}
+      <UseReducercomp />
     </>
   );
 }
