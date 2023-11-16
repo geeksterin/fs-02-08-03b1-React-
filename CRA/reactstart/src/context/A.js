@@ -8,9 +8,10 @@ function A() {
   return (
     <div>
       <h1>A</h1>
-      <UserContext.Provider value={user}>
+      <UserContext.Provider value={"obito uchina"}>
         <B />
       </UserContext.Provider>
+      /..... ....
     </div>
   );
 }
