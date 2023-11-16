@@ -2,7 +2,8 @@ import "./App.css";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import A from "./Sideeffects/NestedComponents/A";
+// import A from "./Sideeffects/NestedComponents/A";
+import A from "./context/A";
 import Frag from "./oct26th/Frag";
 import Imgcomp from "./oct26th/Imgcomp";
 import Event from "./oct26th/Event";
@@ -55,7 +56,8 @@ function App() {
       <Footer />
       <h1>I am below BrowserRoyter</h1> */}
       {/* <UseReducercomp /> */}
-      <MultiCounter />
+      {/* <MultiCounter /> */}
+      <A />
     </>
   );
 }
