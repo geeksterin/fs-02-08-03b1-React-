@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getAllUsers, getUser, postUsers } from "../http/http.service";
-//please see the "../http/http.service" for more details implementation of axios
+//please see the "../http/http.service" for more detail implementation of axios
 
 function Comp() {
   const [users, setUsers] = useState([]);

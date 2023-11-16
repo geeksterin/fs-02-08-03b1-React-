@@ -78,7 +78,7 @@ import React, { useReducer, useState } from "react";
 //     </div>
 //   );
 // }
-// export default UseReducercomp;
+
 
 const initialState = {
   count: 0,
@@ -120,4 +120,35 @@ function UseReducercomp() {
     </div>
   );
 }
+
+
+
+// const initial = {
+//   user: null,
+//   count: 0,
+//   ...20
+// }
+
+// function r(state,action)
+// {
+//   switch (action.type)
+//   {
+
+//   }
+// }
+
+// function Comp()
+// {
+//   // const [user, setUsers] = useState({});
+//   // const [count, setCount] = useState(0);
+//   //..20
+
+//   const [state, dispatch] = useReducer(r, initial);
+
+//   return (
+//     <h1>Hello World</h1>
+//   )
+// }
+
+
 export default UseReducercomp;

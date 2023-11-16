@@ -22,6 +22,7 @@ import Nav from "./Components/Nav";
 import Users from "./Pages/Users";
 import User from "./Pages/User";
 import UseReducercomp from "./UseReducer/UseReducercomp";
+import MultiCounter from "./UseReducer/MultiCounter";
 
 function App() {
   // const inlineStyle = {
@@ -53,7 +54,8 @@ function App() {
       </BrowserRouter>
       <Footer />
       <h1>I am below BrowserRoyter</h1> */}
-      <UseReducercomp />
+      {/* <UseReducercomp /> */}
+      <MultiCounter />
     </>
   );
 }
