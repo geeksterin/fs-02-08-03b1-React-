@@ -69,7 +69,7 @@ import React, { useReducer, useState } from "react";
 // }
 // function UseReducercomp() {
 //   const [state, dispatch] = useReducer(reduce, initialState);
-//   // const [state,setState] = useState(0)
+//  // const [state,setState] = useState(0)
 //   return (
 //     <div>
 //       <h1>{state.count}</h1>
@@ -97,7 +97,6 @@ function reduce(state, action) {
       return {
         count: state.count + action.value,
       };
-
     case "decrementby5":
       return {
         count: state.count - action.value,

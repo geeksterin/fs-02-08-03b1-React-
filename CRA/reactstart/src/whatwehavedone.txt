@@ -26,4 +26,35 @@
 [+] Props(Again)
 [+] Props Driling
 [+] Types Of Props
+[+] Function As Props
+[+] Virtual Dom vs Real Dom
+[+] Iterative Diffing Algo And Reconciliation
+[+] State
+[+] UseState
+[+] Pass state and setter function as props
+[+] Conditional Rendering
+[+] Short circuit
+[+] SideEffects
+[+] UseEffect
+    [+] After Mounting And Every Updation Phase(No dependency array)
+    [+] After Only Mounting Phase(Empty dependency array)
+    [+] After Mounting And Specific Updation Phase(Specific dependency in dependency array)
+    [+] After Mounting And Specific Updation Phase with Cleanup Function(Avoid leaks in code with Cleanup function)
+[+] Axios
+    [+] Use Axios Directly
+    [+] Go with industry way, by creating service file
+    [+] Get
+    [+] Post
+[+] React router dom(Mostly All)
+    [+] Normal Routing
+    [+] Nested Routing
+    [+] UseNavigate
+    [+] UseParams
+[+] UseReducer
+    [+] Normal state and action
+    [+] Object State and Normal action
+    [+] Object State and Object Action(Redux Way)
+    
+
+
 
