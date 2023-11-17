@@ -18,3 +18,29 @@ const HomePage = () => {
 }
 
 export default HomePage;
+
+/**
+ { (mealsLoading) ? <Loader /> : (meals === null) ? <NotFound /> : (meals?.length) ? <MealList meals = {meals} /> : "" }
+ if(mealsLoading)
+ {
+      return <Loader/>
+ }
+ else
+ {
+      if(meals===null)
+      {
+          return <NotFound />
+      }
+      else
+      {
+          if(meals.length)
+          {
+              return <MealList meals = {meals} />
+          }
+          else
+          {
+          return ""
+          }
+      }
+ }
+ */

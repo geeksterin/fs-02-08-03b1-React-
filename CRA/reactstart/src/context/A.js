@@ -9,10 +9,10 @@ function A() {
   return (
     <div>
       <h1>A</h1>
-      <UserContext.Provider value={"obito uchina"}>
+      <UserContext.Provider value={"samiul khan"}>
         <B />
-        <Outside />
       </UserContext.Provider>
+      <Outside />
     </div>
   );
 }
