@@ -24,6 +24,7 @@ import Users from "./Pages/Users";
 import User from "./Pages/User";
 import UseReducercomp from "./UseReducer/UseReducercomp";
 import MultiCounter from "./UseReducer/MultiCounter";
+import ComplexCounter from "./Components/ComplexCounter";
 
 function App() {
   // const inlineStyle = {
@@ -57,7 +58,7 @@ function App() {
       <h1>I am below BrowserRoyter</h1> */}
       {/* <UseReducercomp /> */}
       {/* <MultiCounter /> */}
-      <A />
+      <ComplexCounter />
     </>
   );
 }
