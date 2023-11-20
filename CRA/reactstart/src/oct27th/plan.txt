@@ -1,5 +1,0 @@
-[ - ] Hooks
-[ - ] State
-[ - ] Virtual Dom vs Real Dom
-[ - ] Iterative Diffing
-[ - ] Reconciliation

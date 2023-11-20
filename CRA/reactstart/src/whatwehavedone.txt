@@ -54,6 +54,9 @@
     [+] Normal state and action
     [+] Object State and Normal action
     [+] Object State and Object Action(Redux Way)
+
+
+[-] Custom Hooks (!important)
     
 
 

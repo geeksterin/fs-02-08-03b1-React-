@@ -6,6 +6,7 @@ import { MealProvider } from "./context/mealContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  
   <SidebarProvider>
     <MealProvider>
       <App />
