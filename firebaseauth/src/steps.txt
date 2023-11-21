@@ -1,0 +1,13 @@
+[1] Create a Project in Firebase
+[2] From build/authentication Enable Authentication In that Project with a provider
+[3] come back to project overview and click on web
+[4] register with any name of your choice and copy the config code provided to you by Firebase
+[5] run npm i firebase in the project where you want to use firebase
+[6] create a firebase.config.js file and pasth the config copied from firebase to that file
+[7] in that file, create auth and provider and export them.
+[8] whenever you want to use authentication service in your components, import auth and provider from
+firebase.config.js, along with signUpWithPopup
+[9] when ever you want to to signup, call the signUpWithPopup function 
+with auth and provider as arguments
+[10] handle the promise, and as data, you will get the user.
+[11] store the data in global state, authentication done.
