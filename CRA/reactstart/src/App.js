@@ -24,12 +24,13 @@ import "./App.css";
 // import User from "./Pages/User";
 // import UseReducercomp from "./UseReducer/UseReducercomp";
 // import MultiCounter from "./UseReducer/MultiCounter";
-import ComplexCounter from "./Components/ComplexCounter";
+// import ComplexCounter from "./Components/ComplexCounter";
+import RenderComp from "./Optmization/RenderComp";
 
 function App() {
   return (
     <>
-      <ComplexCounter />
+      <RenderComp />
     </>
   );
 }
