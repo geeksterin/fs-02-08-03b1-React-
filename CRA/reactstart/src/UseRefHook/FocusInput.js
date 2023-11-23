@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react";
 function FocusInput() {
   const inputRef = useRef(null);
   useEffect(() => {
-    // console.log(inputRef.current);
+    console.dir(inputRef.current);
     inputRef.current.focus();
   }, []);
   return (

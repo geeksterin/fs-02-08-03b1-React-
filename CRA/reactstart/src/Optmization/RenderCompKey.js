@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { v4 } from "uuid";
 
-function RenderComp() {
+function RenderCompKey() {
   const api = "https://api.github.com/users";
   const [users, setUsers] = useState([]);
   console.log(v4());
@@ -23,4 +23,4 @@ function RenderComp() {
   );
 }
 
-export default RenderComp;
+export default RenderCompKey;

@@ -26,13 +26,14 @@ import "./App.css";
 // import UseReducercomp from "./UseReducer/UseReducercomp";
 // import MultiCounter from "./UseReducer/MultiCounter";
 // import ComplexCounter from "./Components/ComplexCounter";
-// import RenderComp from "./Optmization/RenderComp";
-import FocusInput from "./UseRefHook/FocusInput";
+// import RenderCompKey from "./Optmization/RenderCompKey";
+// import FocusInput from "./UseRefHook/FocusInput";
+import Intervalcomp from "./UseRefHook/Intervalcomp";
 
 function App() {
   return (
     <>
-      <FocusInput />
+      <Intervalcomp />
     </>
   );
 }
