@@ -29,12 +29,13 @@ import "./App.css";
 // import RenderCompKey from "./Optmization/RenderCompKey";
 // import FocusInput from "./UseRefHook/FocusInput";
 // import Intervalcomp from "./UseRefHook/Intervalcomp";
-import Container from "./Optmization/HigherOrderComponent/Container";
+// import Container from "./Optmization/HigherOrderComponent/Container";
+import UseMemoComp from "./Optmization/HigherOrderComponent/UseMemoComp";
 
 function App() {
   return (
     <>
-      <Container />
+      <UseMemoComp />
     </>
   );
 }
