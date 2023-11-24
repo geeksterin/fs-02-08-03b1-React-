@@ -30,12 +30,31 @@ import "./App.css";
 // import FocusInput from "./UseRefHook/FocusInput";
 // import Intervalcomp from "./UseRefHook/Intervalcomp";
 // import Container from "./Optmization/HigherOrderComponent/Container";
-import UseMemoComp from "./Optmization/HigherOrderComponent/UseMemoComp";
+// import UseMemoComp from "./Optmization/HigherOrderComponent/UseMemoComp";
+import useLoadHook from "./CustomHooks/useLoadHook";
 
 function App() {
+  const [isLoading, data] = useLoadHook("https://api.github.com/users");
+  const [loading, user] = useLoadHook("https://api.github.com/users/1");
   return (
     <>
-      <UseMemoComp />
+      {isLoading ? (
+        <h2>Loading......</h2>
+      ) : (
+        <div>
+          {data.map((user) => (
+            <p>{user.login}</p>
+          ))}
+        </div>
+      )}
+
+      {loading ? (
+        <h1>User is loding</h1>
+      ) : (
+        <div>
+          <p>{user.name}</p>
+        </div>
+      )}
     </>
   );
 }
