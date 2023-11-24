@@ -28,12 +28,13 @@ import "./App.css";
 // import ComplexCounter from "./Components/ComplexCounter";
 // import RenderCompKey from "./Optmization/RenderCompKey";
 // import FocusInput from "./UseRefHook/FocusInput";
-import Intervalcomp from "./UseRefHook/Intervalcomp";
+// import Intervalcomp from "./UseRefHook/Intervalcomp";
+import Container from "./Optmization/HigherOrderComponent/Container";
 
 function App() {
   return (
     <>
-      <Intervalcomp />
+      <Container />
     </>
   );
 }
