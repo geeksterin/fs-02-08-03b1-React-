@@ -11,7 +11,6 @@ function UseMemoComp() {
   }
 
   const isEven = useMemo(() => {
-    console.log("is Even func");
     let i = 0;
     while (i < 2000000000) i++;
     return count % 2 === 0;
