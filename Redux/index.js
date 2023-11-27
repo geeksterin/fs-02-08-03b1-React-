@@ -83,8 +83,15 @@ const rootReducer = combineReducers({
 
 // const store = createStore(reducer);
 const store = createStore(rootReducer);
+store.subscribe(() => {
+  console.log(store.getState());
+});
 
-console.log(store.getState());
+const intialState = {
+    user:user,
+}
+
+// console.log(store.getState());
 store.dispatch(buyCake());
 store.dispatch(buyCake());
 store.dispatch(buyCake());
@@ -93,4 +100,4 @@ store.dispatch(buyCake());
 store.dispatch(buyIceCream());
 store.dispatch(buyIceCream());
 
-console.log(store.getState());
+// console.log(store.getState());
