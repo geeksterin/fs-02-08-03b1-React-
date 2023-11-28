@@ -2,6 +2,8 @@ const redux = require("redux");
 const createStore = redux.createStore;
 const applyMiddleware = redux.applyMiddleware;
 const thunkMiddleware = require("redux-thunk").default;
+const reduxLogger = require("redux-logger");
+const logger = reduxLogger.createLogger();
 const axios = require("axios");
 
 //userState
@@ -36,6 +38,23 @@ function fetchUsersFailure(error) {
     payload: error,
   };
 }
+//async action builders
+
+function fetchUsers() {
+  return function (dispatch) {
+    dispatch(fetchUsersRequest());
+    axios
+      .get("https://api.github.com/users")
+      .then((res) => {
+        //res.data
+        const users = res.data.map((user) => user.id);
+        dispatch(fetchUsersSuccess(users));
+      })
+      .catch((err) => {
+        dispatch(fetchUsersFailure(err.message));
+      });
+  };
+}
 
 //user reducer
 const userReducer = (state = userState, action) => {
@@ -68,4 +87,9 @@ const userReducer = (state = userState, action) => {
 };
 
 //store
-const store = createStore(userReducer, applyMiddleware(thunkMiddleware));
+const store = createStore(
+  userReducer,
+  applyMiddleware(thunkMiddleware, logger)
+);
+// store.subscribe(() => console.log(store.getState()));
+store.dispatch(fetchUsers());
