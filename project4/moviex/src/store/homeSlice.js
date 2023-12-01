@@ -20,3 +20,38 @@ export const homeSlice = createSlice({
 export const { getApiConfiguration, getGenres } = homeSlice.actions;
 
 export default homeSlice.reducer;
+
+/**
+ Cake
+
+ constants.js
+    
+    const BUY_CAKE = "BUY_CAKE
+
+actions.js
+
+    function buyCake()
+    {
+        return {
+        type:BUY_CAKE
+        }
+    }
+
+reducer.js
+
+    const intitalState = {
+    
+    }
+
+    const reducer=(state = intitialState,action)=>{
+        switch(action.type)
+        {
+        
+        }
+    }
+ 
+ 
+ store.js
+    
+ 
+ */

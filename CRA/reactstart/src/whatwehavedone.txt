@@ -13,29 +13,29 @@
 [+] Destructring of props
 [+] Nesting of components
 [+] Npm vs Npx
-[+] Create-react-app
+[+] Create-react-app ,create-vite, percel
 [+] Folder structure
 [+] How to create components?(Again)
 [+] How to nest components?(multilevel nesting of components)
 [+] Inline css
 [+] External css and its problems(important)
 [+] Module css
-[+] React Fragments
+[+] React Fragments(<></> , <React.Fragment></React.Fragment> )
 [+] How to add images to your project
-[+] Event Listeners
+[+] Event Listeners(if the event takes any arg we will be using arrow function)
 [+] Props(Again)
 [+] Props Driling
 [+] Types Of Props
 [+] Function As Props
-[+] Virtual Dom vs Real Dom
-[+] Iterative Diffing Algo And Reconciliation
+[+] Virtual Dom vs Real Dom **...
+[+] Iterative Diffing Algo And Reconciliation **..
 [+] State
 [+] UseState
-[+] Pass state and setter function as props
+[+] Pass state and setter function as props **...
 [+] Conditional Rendering
 [+] Short circuit
 [+] SideEffects
-[+] UseEffect
+[+] UseEffect **...
     [+] After Mounting And Every Updation Phase(No dependency array)
     [+] After Only Mounting Phase(Empty dependency array)
     [+] After Mounting And Specific Updation Phase(Specific dependency in dependency array)
@@ -54,6 +54,38 @@
     [+] Normal state and action
     [+] Object State and Normal action
     [+] Object State and Object Action(Redux Way)
+[+] Context API **...
+    [+] What is context?why we need it?
+    [+] Creating a context using React.createContext()
+    [+] Provider and Consumer components 
+    [+] Details About Provider (value={value})
+    [+] Details About Consumer
+        [+] Normal way of consuming valus
+        [+] useContext Hook
+    [+] useRef
+        [+] How to use useRef, Mutable Objects. And it can hold values unlike varible in re redners
+    [+] React Optimization
+        [+] Key , Anti Index Pattern
+        [+] useCallback Hook (to memoize a function)
+        [+] useMemo(to memoize a return value of a function)
+    [+] Redux 
+        [+] Why redux?
+        [+] Middleware(logger,redux-thunk)
+        [+] Actions String
+        [+] Actions Builder
+        [+] Async Action Builders (redux-thunk)
+        [+] Reducers
+        [+] Dispatch
+        [+] Store
+        [+] Single src of truth in redux
+    [+] react-redux
+            [+] How to connet react app with redux
+            [+] Provider(store={store})
+            [+] Premitive way of consuming redux store values, mapStateToProps, mapDispathToProp, connect()
+            [+] new way of consuming redux store value, useSelector(), useDispatch();
+
+        
+
 
 
 [-] Custom Hooks (!important)
